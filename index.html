@@ -9,8 +9,7 @@
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Open+Sans&family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Open+Sans&family=Roboto+Mono:wght@700&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/b63eb65403.js" crossorigin="anonymous"></script>
     <!-- external css -->
@@ -21,73 +20,142 @@
 <body>
     <!-- landing page -->
     <div id="landing-page">
-        <!-- navbar -->
-        <nav class="  navbar navbar-expand-md fixed-top bg-primary-color px-3  ">
-            <a class="navbar-brand " href="#">
-                <i class="fa-brands fa-gg fa-2x"></i>
-            </a>
-            <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto ">
-                    <li class="nav-item">
-                        <a href="" class="nav-link ">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#about_me" class="nav-link">About Me</a>
-                    </li>
-                    <!--    <li class="nav-item">
-                    <a href="#services" class="nav-link">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#projects" class="nav-link  ">Projects</a>
-                </li> -->
-                    <li class="nav-item">
-                        <a href="#core_tools" class="nav-link ">Tools</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#contact" class="nav-link ">Contact</a>
-                    </li>
-                    <!--  <li class="nav-item">
-                    <a href="#other_tools" class="nav-link ">Other Tools</a>
-                </li> -->
-                </ul>
-            </div>
-        </nav>
-        <!-- end of navbar -->
-
-        <!-- landing-page-content -->
-        <div id="landing-page-content">
-
+        <div id="bg-layer">
+            <!-- navbar -->
+            <nav class="  navbar navbar-expand-md fixed-top  px-3  " id="navBar">
+                <a class="navbar-brand " href="#">
+                    <i class="fa-brands fa-gg fa-2x"></i>
+                </a>
+                <button class="navbar-toggler navbar-dark" type="button" id="toggler" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarNav">
+                    <ul class="navbar-nav ml-auto ">
+                        <li class="nav-item">
+                            <a href="" class="nav-link ">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#about-section" class="nav-link">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#core_tools" class="nav-link ">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link ">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </div>
-        <!-- end of anding-page-content  -->
+        <!-- end of navbar -->
+        <!-- hero -->
+        <div class="d-flex justify-content-center " id="hero">
+            <div>
+                <h1 class="text-center">Hello I'm</h1>
+                <h2 class="text-center">Gabriel Guillermo</h2>
+                <p class="text-center">I'm a Junior Web Developer based in the Philippines</p>
+            </div>
+        </div>
+        <!-- end of hero -->
     </div>
     <!-- end of landing page -->
-
     <!-- about section -->
-    <section>
-    	
+    <section class="container-fluid" id="about-section">
+        <h2 class="text-center text-light" id="sticky-about"> About </h2>
+        <div class="rounded" id="aboutMe-container">
+            <img class="img-fluid" src="./images/myProfile.jpg" alt="Gabriel Photo" id="myPhoto">
+            <div class="mx-auto" id="aboutMe">
+                <div class=" row ">
+                    <div class="col-12">
+                        <p class="text-justify p-2">I'm Gabriel Delarmente Guillermo, I completed the Bachelor of Science in Information Technology-Programming program at Eastern Visayas State University-Tanauan Campus in the academic year 2020–2021.
+                        </p>
+                        <p class="text-justify p-2">
+                            For a year, I worked as a freelancer accepting Capstone projects from my junior peers. Additionally, before taking on such assignments, I contributed fairly to the development of the capstone project for our group and was named our batch's programmer of the year.
+                        </p>
+                        <p class="text-justify p-2">
+                            I knew a few fundamental programming languages used in the creation of web pages before deciding to participate in Zuitt Coding Bootcamp. In light of this, I made the decision to enroll in the bootcamp in order to improve my present programming abilities and learn more about Web development, particularly about the MERN stack, one of the most popular stacks at the moment</p>
+                    </div>
+                    <div class="col-12  ">
+                        <div class="text-center mt-5"><i class=" fa-solid fa-user-gear fa-2x "></i></div>
+                        <h4 class=" text-center ">Skill set </h4>
+                        <div class="row p-3">
+                            <div class="col-12  d-flex  justify-content-center ">
+                                <img class="img-fluid lang-logo" src="./images/logo-html5.png" alt="HTML5 logo" title="HTML5">
+                            </div>
+                            <div class="col-5  d-flex  justify-content-center ">
+                                <img class="img-fluid lang-logo" src="./images/logo-css3.png" alt="CSS3 logo" title="CSS3">
+                            </div>
+                          
+                            <div class="col-5  offset-2 d-flex  justify-content-center ">
+                                <img class="img-fluid lang-logo" src="./images/logo-javascript.png" alt="JAVASCRIPT logo" title="JAVASCRIPT">
+                            </div>
+                            <div class="col-4  d-flex  justify-content-center "><img class="img-fluid lang-logo" src="./images/logo-php.png" alt="PHP logo" title="PHP">
+                            </div>
+                            <div class="col-4 offset-4 d-flex  justify-content-center ">
+                                <img class="img-fluid lang-logo" src="./images/logo-bootstrap.png" alt="BOOTSTRAP logo" title="BOOTSTRAP">
+                            </div>
+                            <div class="col-4  d-flex  justify-content-center ">
+                                <img class="img-fluid lang-logo" src="./images/json.png" alt="JSON logo" title="JSON">
+                            </div>
+                              <div class="col-4 offset-4  d-flex  justify-content-center ">
+                                <img class="img-fluid lang-logo" src="./images/xampp.png" alt="xampp logo" title="XAMPP">
+                            </div>
+                            <div class="col-12 d-flex justify-content-center ">
+                                <img class="img-fluid lang-logo rounded-circle" src="./images/logo-vb.png" alt="VB logo" title="VISUAL BASIC">
+                            </div>
+                          
+                        </div>
+                        <!-- <a href="C:/Users/Acer/Desktop/MY%20FILES/compiled%20file/web%20application%20development/biography%20hmtl/home.html">ad</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <!-- end of about section -->
 
+
     <!-- projects section -->
-    <section >
-    	
+    <section class="container-fluid py-5" id="project-section">
+        <h2 class="text-center">Projects</h2>
+        <div class="row justify-content-center ">
+            <div class=" project-container">
+                <div class="project-img-1 "> 
+                    <img class=" img-fluid shadow" src="./images/project-1.6.png"  alt="">
+                </div>
+                <div class="project-img-2">
+                    <img class="img-fluid shadow" src="./images/project-1.1.png" alt="">
+                </div>
+
+                  <div class="project-img-3">
+                    <img class="img-fluid shadow" src="./images/project-1.5.png" alt="">
+                </div>
+                  <div class="project-img-4">
+                    <img class="img-fluid shadow" src="./images/project-1.3.png" alt="">
+                </div>
+            </div>
+            <div class="col-12"> </div>
+        </div>
+
+
+
     </section>
     <!-- end of projects section -->
-    
-    <!-- contact section -->
-   	<section id="contant">
-   		
-   	</section>
-   	<!-- end of contact section -->
 
+
+
+
+    <!-- contact section -->
+    <section id="contact-section">
+    </section>
+    <!-- end of contact section -->
     <!--footer -->
     <footer>
-    	
     </footer>
     <!-- end of footer -->
+    <!-- JS dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
 </body>
 
 </html>
