@@ -320,6 +320,12 @@ height: 120px;
 
 }
 
+    #card-row {
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
 #contact-container{
     width: 850px;
     margin: 0 auto;
