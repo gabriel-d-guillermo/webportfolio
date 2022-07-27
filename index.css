@@ -1,8 +1,8 @@
 :root {
-    --primary-color:#202020;
+    --primary-color:#2e2e2e;
     --secondary-color: #333333;
     --accent-color: #C7C7C7;
-    --accent2-color: #009688;
+    --accent2-color: #006f64;
 }
 
 
@@ -94,11 +94,16 @@ nav{
 }
 
 
-#hero p {
-    color: var(--accent2-color);
-    font-size: 1.1rem;
-}
 
+#hero p {
+    color: var(--accent-color);
+    font-size: 1.2rem;
+    font-weight: bold;
+      text-shadow: 1px 1px var(--accent2-color);
+}
+#hero span{
+    color: var(--accent2-color);
+}
 
 #bg-layer {
     background-color: rgb(0, 0, 0, 0.5);
@@ -112,7 +117,6 @@ nav{
     color: white;
     padding: .2rem;
     margin-top: 10rem;
-    /*border: 1px solid white;*/
 }
 
 
@@ -124,15 +128,16 @@ nav{
     min-height: 100vh;
     padding: 5rem 1rem;
     color: var(--accent-color);
-    background-color: #272f33;
+    background-color: #2e2e2e;
 
 }
 #paragraph-container{
-   border: 1px solid var(--accent2-color);
+   box-shadow: 0px 5px 8px 10px #262626;
     padding-top: 1rem;
     border-radius: .5rem;
-     box-shadow: 1px 5px 5px grey;
      margin-top: 1rem;
+     background-color: #2e2e2e;
+
 }
 
 
@@ -147,54 +152,29 @@ nav{
     width: 150px;
     margin: 0 auto;
     border-radius: 50%;
+    box-shadow: 1px 5px 8px 10px #262626;
 }
 
-#zuitt-proj-img .img-1 {
-    grid-area: img-1;
-
+#zuitt-proj-container .row .card:hover{
+     border: 2px solid var(--accent2-color);
 }
 
-#zuitt-proj-img .img-2 img {
-    display: block;
-    margin: auto;
-    width: 30%;
+#card-row {
+    grid-row-gap: 2rem;
+
 }
-
-#zuitt-proj-img .img-4 img {
-    display: block;
-    margin: auto;
-    width: 30%;
-}
-
-#zuitt-proj-img .img-6 img {
-    display: block;
-    margin: auto;
-    width: 30%;
-}
-
-#zuitt-proj-img {
-   grid-row-gap: 1rem;
-}
-
-#project-section img {
-    background-size: cover;
-    border-radius: 5px;
-}
-
-#php-proj-items {
-     grid-row-gap: 1.5rem;
-}
-
-
 
 /*=== contact section ===*/
 
 #contact-section {
     min-height: 80vh;
-     padding: 5rem 0;
+     padding: 5rem 1rem;
 }
-#contact-section form {
-    border: 1px solid var(--accent2-color);
+
+ #side-form{
+
+   display:none;
+
 }
 
 footer {
@@ -206,6 +186,7 @@ footer a{
 
 
 
+
 /*=== medium size screen ===*/
 
 @media only screen and (min-width: 768px) {
@@ -214,13 +195,24 @@ footer a{
     margin-top: 15rem;
 }
 
+#hero p {
+    color: var(--accent-color);
+    font-size: 2rem;
+    font-weight: bold;
+      text-shadow: 1px 1px var(--accent2-color);
+}
+#hero span{
+    color: var(--accent2-color);
+}
+
+
 #myPhoto {
     margin-top: 1rem;
     width: 200px;
 }
 #paragraph-container{
     padding: 1rem 3rem;
-    width: 300px !important;
+    width: 100px ;
 }
 
 #skill-logo{
@@ -231,23 +223,21 @@ footer a{
     width: 400px;
     margin: 0 auto;
 }
+#zuitt-proj-container{
 
-#zuitt-proj-img{
-    grid-row-gap: 4rem;
 }
+#card-row {
+    grid-row-gap: 2rem;
 
-#zuitt-proj-img{
-  padding: 1rem;
 }
-
-#zuitt-proj-img .col-md-10 img{
- width: 97%;
+#card-row .col-md-6{
+   padding: .5rem;
+   height: 400px;
 }
-
-#zuitt-proj-img .col-md-2 img{
-    width: 100%;  
+                    
+.proj-img{
+height: 130px;
 }
-
 
 #php-proj-items{
     grid-row-gap:4rem;
@@ -258,17 +248,19 @@ footer a{
     margin: 0 auto;
 }
 
-#contact-section .d-flex{
-    width: 500px;
+#contact-container{
+    width: 600px;
     margin: 0 auto;
 }
 
 footer .d-flex{
-    padding: 3rem 0rem;
+    padding: 1.3rem 0rem;
 }
 
 
 }
+
+
 
 
 /*==== large to extra large screen ====*/
@@ -276,31 +268,31 @@ footer .d-flex{
 @media only screen and (min-width: 992px) {
 
 #hero{
-    margin-top: 10rem;
-}
-#hero h1,
-#hero h2{
-    font-size: 3rem;
+    margin-top: 5rem;
 }
 
 #hero p {
-    color: var(--accent2-color);
-    font-size: 1.4rem;
+    color: var(--accent-color);
+    font-size: 3rem;
     font-weight: bold;
+      text-shadow: 1px 1px var(--accent2-color);
+}
+#hero span{
+    color: var(--accent2-color);
 }
 
 #about-grid{
-    width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
     padding-top: 2rem;
 }
 
 
 #myPhoto {
-    width: 400px;
+    margin-top: 0;
+   width: 100%;
     border-radius: 1rem;
-  /*  margin: 0;
-    margin-left: auto;*/
+
 }
 
 #paragraph-container{
@@ -309,30 +301,38 @@ footer .d-flex{
 }
 
 #skill-container{
-    margin-top: 5rem;
+    /*margin-top: 5rem;*/
+}
+#skill-logo{
+    font-size: 3rem;
 }
 #skill-items{
-    width: 600px;
+    margin-top: 3rem;
+  width:min(900px,1000px); 
 }
 #skill-container .lang-logo{
-    max-width: 90px;
-   
+    max-width: 110px;
+ 
 }
 
-#zuitt-proj-img{
-    width: 700px;
+.proj-img{
+height: 120px;
+
+}
+
+#contact-container{
+    width: 850px;
     margin: 0 auto;
 }
 
-#php-proj-container{
-    width: 980px;
+ #side-form{
+   display:flex;
+   flex-direction: column;
+
 }
 
-#php-proj-items img{
-    display: block;
-    width: 95%;
-    margin: 0 auto;
 }
 
 
-}
+
+
