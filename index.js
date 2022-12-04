@@ -12,12 +12,6 @@ navBar.classList.remove("bg-primary-color" ,"box-shadow");
 }
 });
 
-// window.document.getElementById('toggler').addEventListener('click',()=>{	
-// 	navBar.classList.toggle("box-shadow-2");
-// });
-
-
-
 const sections = document.querySelectorAll("section");
 const navLi = document.querySelectorAll("nav ul li");
 window.addEventListener("scroll", () => {
